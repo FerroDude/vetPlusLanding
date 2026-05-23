@@ -31,6 +31,39 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 - **Colors & fonts** — Update CSS variables in `src/index.css`
 - **CTA form** — Replace the alert in `CtaBanner.tsx` with your API or email service (e.g. Formspree, Resend)
 
+## Deploy (GitHub Pages)
+
+The site is configured for [GitHub Pages](https://pages.github.com/) at:
+
+**https://ferrodude.github.io/vetPlusLanding/**
+
+### One-time setup on GitHub
+
+1. Open the repo: [github.com/FerroDude/vetPlusLanding](https://github.com/FerroDude/vetPlusLanding)
+2. Go to **Settings** → **Pages**
+3. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”)
+
+### Publish updates
+
+Push to the `main` branch. The workflow in `.github/workflows/deploy.yml` builds the site and deploys automatically.
+
+```bash
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+Check progress under the repo’s **Actions** tab. The site is usually live within 1–2 minutes after the workflow succeeds.
+
+### Local production preview
+
+```bash
+npm run build
+npm run preview
+```
+
+Preview uses the same `/vetPlusLanding/` base path as production.
+
 ## Stack
 
 - [Vite](https://vite.dev/)
