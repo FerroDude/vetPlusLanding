@@ -41,11 +41,18 @@ The site is configured for [GitHub Pages](https://pages.github.com/) at:
 
 1. Open the repo: [github.com/FerroDude/vetPlusLanding](https://github.com/FerroDude/vetPlusLanding)
 2. Go to **Settings** → **Pages**
-3. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”)
+3. Under **Build and deployment** → **Source**, choose **Deploy from a branch**
+4. **Branch:** `gh-pages` · **Folder:** `/ (root)` · click **Save**
+
+> The `gh-pages` branch is created automatically on the first successful workflow run. If you do not see it yet, push the workflow below and wait for Actions to finish, then refresh the Pages settings.
+
+> **If deploy failed with “404” / “Ensure GitHub Pages has been enabled”:** you likely had **GitHub Actions** selected as the Pages source without Pages being fully enabled. Use **Deploy from a branch** → `gh-pages` as above (the workflow pushes built files to that branch).
+
+The repository must be **public** (or GitHub Pro for private repos) for free GitHub Pages.
 
 ### Publish updates
 
-Push to the `main` branch. The workflow in `.github/workflows/deploy.yml` builds the site and deploys automatically.
+Push to the `main` branch. The workflow builds the site and publishes the `dist` folder to the `gh-pages` branch.
 
 ```bash
 git add .
