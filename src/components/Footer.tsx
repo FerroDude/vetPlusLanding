@@ -1,6 +1,12 @@
 import { useT } from '../i18n'
 import './Footer.css'
 
+const groupHrefs = [
+  ['#features', '#benefits', '#audiences', '#faq'],
+  ['#cta', '#cta'],
+  ['#', '#'],
+]
+
 export function Footer() {
   const t = useT()
 
@@ -17,18 +23,18 @@ export function Footer() {
                 />
               </svg>
             </span>
-            VetPlus
+            Vet+
           </a>
           <p className="footer__tagline">{t.footer.tagline}</p>
         </div>
         <nav className="footer__nav" aria-label={t.footer.navAria}>
-          {t.footer.groups.map((group) => (
+          {t.footer.groups.map((group, gi) => (
             <div key={group.title} className="footer__col">
               <h3>{group.title}</h3>
               <ul>
-                {group.items.map((item) => (
+                {group.items.map((item, ii) => (
                   <li key={item}>
-                    <a href="#">{item}</a>
+                    <a href={groupHrefs[gi]?.[ii] ?? '#'}>{item}</a>
                   </li>
                 ))}
               </ul>
@@ -39,7 +45,7 @@ export function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p>
-            &copy; {new Date().getFullYear()} VetPlus. {t.footer.copyright}
+            &copy; {new Date().getFullYear()} Vet+. {t.footer.copyright}
           </p>
         </div>
       </div>

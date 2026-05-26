@@ -11,11 +11,12 @@ export type Messages = {
     nav: {
       features: string
       howItWorks: string
-      pricing: string
+      benefits: string
+      forYou: string
       faq: string
     }
-    viewPlans: string
-    startTrial: string
+    learnMore: string
+    cta: string
     openMenu: string
     closeMenu: string
     langEn: string
@@ -26,26 +27,21 @@ export type Messages = {
     badge: string
     title: string
     titleEm: string
-    subtitle: string
+    lead: string
+    supporting: string
     ctaPrimary: string
     ctaSecondary: string
-    trust: string
-    stats: { value: string; label: string }[]
     mock: {
-      inboxTitle: string
-      statusNew: string
-      messages: { name: string; text: string }[]
-      syncTitle: string
-      syncDesc: string
+      appTitle: string
+      rows: { label: string; detail: string }[]
+      floatTitle: string
+      floatDesc: string
     }
   }
   features: {
     label: string
     title: string
     subtitle: string
-    integrationsAria: string
-    integrationsLabel: string
-    integrationsMore: string
     items: { title: string; description: string }[]
   }
   howItWorks: {
@@ -54,28 +50,25 @@ export type Messages = {
     subtitle: string
     steps: { title: string; description: string }[]
   }
-  testimonials: {
-    label: string
-    title: string
-    items: { quote: string; name: string; role: string; initials: string }[]
-  }
-  pricing: {
+  benefits: {
     label: string
     title: string
     subtitle: string
-    currency: string
-    perMonth: string
-    custom: string
-    badgePopular: string
-    plans: {
+    practicalTitle: string
+    emotionalTitle: string
+    practical: { title: string; description: string }[]
+    emotional: { title: string; description: string }[]
+  }
+  audiences: {
+    label: string
+    title: string
+    subtitle: string
+    cards: {
       id: string
       name: string
-      price: string
       description: string
       features: string[]
       cta: string
-      highlighted?: boolean
-      badge?: string
     }[]
   }
   faq: {

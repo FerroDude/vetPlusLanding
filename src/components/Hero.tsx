@@ -8,7 +8,7 @@ export function Hero() {
     <section className="hero" aria-labelledby="hero-heading">
       <div className="hero__bg" aria-hidden="true" />
       <div className="container hero__grid">
-        <div className="hero__content">
+        <div className="hero__copy">
           <p className="hero__badge">
             <span className="hero__badge-dot" aria-hidden="true" />
             {t.hero.badge}
@@ -17,7 +17,8 @@ export function Hero() {
             {t.hero.title}{' '}
             <em>{t.hero.titleEm}</em>
           </h1>
-          <p className="hero__subtitle">{t.hero.subtitle}</p>
+          <p className="hero__lead">{t.hero.lead}</p>
+          <p className="hero__supporting">{t.hero.supporting}</p>
           <div className="hero__ctas">
             <a href="#cta" className="btn btn-primary btn-lg">
               {t.hero.ctaPrimary}
@@ -35,15 +36,6 @@ export function Hero() {
               {t.hero.ctaSecondary}
             </a>
           </div>
-          <p className="hero__trust">{t.hero.trust}</p>
-          <dl className="hero__stats">
-            {t.hero.stats.map((stat) => (
-              <div key={stat.label} className="hero__stat">
-                <dt className="hero__stat-value">{stat.value}</dt>
-                <dd className="hero__stat-label">{stat.label}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
 
         <div className="hero__visual" aria-hidden="true">
@@ -52,36 +44,32 @@ export function Hero() {
               <span className="hero__card-dot hero__card-dot--red" />
               <span className="hero__card-dot hero__card-dot--yellow" />
               <span className="hero__card-dot hero__card-dot--green" />
-              <span className="hero__card-title">{t.hero.mock.inboxTitle}</span>
+              <span className="hero__card-title">{t.hero.mock.appTitle}</span>
             </div>
             <ul className="hero__messages">
-              {t.hero.mock.messages.map((msg, i) => (
+              {t.hero.mock.rows.map((row, i) => (
                 <li
-                  key={msg.name}
+                  key={row.label}
                   className={`hero__message ${i === 0 ? 'hero__message--active' : ''}`}
                 >
-                  <span className="hero__avatar">
-                    {msg.name
-                      .split(' ')
-                      .map((p) => p[0])
-                      .join('')}
+                  <span className="hero__row-icon" aria-hidden="true">
+                    {i === 0 ? '💬' : i === 1 ? '📅' : i === 2 ? '💊' : '📄'}
                   </span>
                   <span className="hero__message-body">
-                    <strong>{msg.name}</strong>
-                    <span>{msg.text}</span>
+                    <strong>{row.label}</strong>
+                    <span>{row.detail}</span>
                   </span>
-                  {i === 0 && <span className="hero__status">{t.hero.mock.statusNew}</span>}
                 </li>
               ))}
             </ul>
           </div>
           <div className="hero__card hero__card--float">
             <span className="hero__float-icon" aria-hidden="true">
-              ⟳
+              ✦
             </span>
             <div>
-              <strong>{t.hero.mock.syncTitle}</strong>
-              <p>{t.hero.mock.syncDesc}</p>
+              <strong>{t.hero.mock.floatTitle}</strong>
+              <p>{t.hero.mock.floatDesc}</p>
             </div>
           </div>
         </div>

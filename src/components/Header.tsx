@@ -4,11 +4,45 @@ import type { Locale } from '../i18n'
 import './Header.css'
 
 const navHrefs = [
+  { href: '#benefits', key: 'benefits' as const },
   { href: '#features', key: 'features' as const },
+  { href: '#audiences', key: 'forYou' as const },
   { href: '#how-it-works', key: 'howItWorks' as const },
-  { href: '#pricing', key: 'pricing' as const },
   { href: '#faq', key: 'faq' as const },
 ]
+
+function LangSwitcher({
+  className,
+  locale,
+  onPick,
+  labels,
+}: {
+  className?: string
+  locale: Locale
+  onPick: (locale: Locale) => void
+  labels: { en: string; pt: string; switchLang: string }
+}) {
+  return (
+    <div className={className} role="group" aria-label={labels.switchLang}>
+      <button
+        type="button"
+        className={`header__lang-btn ${locale === 'en' ? 'header__lang-btn--active' : ''}`}
+        aria-pressed={locale === 'en'}
+        onClick={() => onPick('en')}
+      >
+        {labels.en}
+      </button>
+      <button
+        type="button"
+        className={`header__lang-btn ${locale === 'pt-PT' ? 'header__lang-btn--active' : ''}`}
+        aria-pressed={locale === 'pt-PT'}
+        onClick={() => onPick('pt-PT')}
+      >
+        {labels.pt}
+      </button>
+    </div>
+  )
+}
 
 export function Header() {
   const { locale, setLocale, messages: t } = useI18n()
@@ -28,9 +62,24 @@ export function Header() {
     }
   }, [menuOpen])
 
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1181px)')
+    const onChange = () => {
+      if (mq.matches) setMenuOpen(false)
+    }
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
+
   const pickLocale = (next: Locale) => {
     setLocale(next)
     setMenuOpen(false)
+  }
+
+  const langLabels = {
+    en: t.header.langEn,
+    pt: t.header.langPt,
+    switchLang: t.header.switchLang,
   }
 
   return (
@@ -47,10 +96,11 @@ export function Header() {
               <circle cx="20" cy="20" r="1.5" fill="white" />
             </svg>
           </span>
-          VetPlus
+          Vet+
         </a>
 
         <nav
+          id="header-nav"
           className={`header__nav ${menuOpen ? 'header__nav--open' : ''}`}
           aria-label={t.header.navAria}
         >
@@ -64,44 +114,44 @@ export function Header() {
             ))}
           </ul>
           <div className="header__actions">
-            <div className="header__lang" role="group" aria-label={t.header.switchLang}>
-              <button
-                type="button"
-                className={`header__lang-btn ${locale === 'en' ? 'header__lang-btn--active' : ''}`}
-                aria-pressed={locale === 'en'}
-                onClick={() => pickLocale('en')}
-              >
-                {t.header.langEn}
-              </button>
-              <button
-                type="button"
-                className={`header__lang-btn ${locale === 'pt-PT' ? 'header__lang-btn--active' : ''}`}
-                aria-pressed={locale === 'pt-PT'}
-                onClick={() => pickLocale('pt-PT')}
-              >
-                {t.header.langPt}
-              </button>
-            </div>
-            <a href="#pricing" className="btn btn-secondary" onClick={() => setMenuOpen(false)}>
-              {t.header.viewPlans}
+            <LangSwitcher
+              className="header__lang header__lang--in-nav"
+              locale={locale}
+              onPick={pickLocale}
+              labels={langLabels}
+            />
+            <a href="#benefits" className="btn btn-secondary" onClick={() => setMenuOpen(false)}>
+              {t.header.learnMore}
             </a>
             <a href="#cta" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
-              {t.header.startTrial}
+              {t.header.cta}
             </a>
           </div>
         </nav>
 
-        <button
-          type="button"
-          className="header__menu-btn"
-          aria-expanded={menuOpen}
-          aria-label={menuOpen ? t.header.closeMenu : t.header.openMenu}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className="header__toolbar">
+          <LangSwitcher
+            className="header__lang header__lang--in-toolbar"
+            locale={locale}
+            onPick={pickLocale}
+            labels={langLabels}
+          />
+          <a href="#cta" className="btn btn-primary header__cta-bar">
+            {t.header.cta}
+          </a>
+          <button
+            type="button"
+            className="header__menu-btn"
+            aria-expanded={menuOpen}
+            aria-controls="header-nav"
+            aria-label={menuOpen ? t.header.closeMenu : t.header.openMenu}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
     </header>
   )

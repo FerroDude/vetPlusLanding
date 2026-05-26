@@ -1,6 +1,6 @@
-# VetPlus Landing Page
+# Vet+ Landing Page
 
-A conversion-focused marketing site for VetPlus — client communication software that integrates with veterinary clinics' existing practice management systems.
+A conversion-focused marketing site for **Vet+** — a desktop and mobile app for pet owners and veterinary clinics that centralises communication, appointment booking, symptom tracking, medication alerts, and document sharing.
 
 ## Quick start
 

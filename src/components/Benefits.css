@@ -1,0 +1,66 @@
+.benefits {
+  background: var(--color-primary);
+  color: white;
+}
+
+.benefits .section-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.benefits .section-title {
+  color: white;
+}
+
+.benefits .section-subtitle {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 40rem;
+}
+
+.benefits__header {
+  margin-bottom: 2.5rem;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.benefits__column-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.benefits__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.benefits__card {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.benefits__card h4 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+}
+
+.benefits__card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}

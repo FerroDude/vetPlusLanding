@@ -1,23 +1,24 @@
 import type { Messages } from '../types'
 
-/** European Portuguese (pt-PT) — concise copy for layout parity with EN */
+/** European Portuguese (pt-PT) — concise, sales-focused */
 export const ptPT: Messages = {
   meta: {
-    title: 'VetPlus — Comunicação para clínicas veterinárias',
+    title: 'Vet+ — Cuidados veterinários, finalmente organizados',
     description:
-      'Integra o software da clínica. Mensagens, lembretes e atualizações aos clientes — sem mudar de PIMS.',
+      'O Vet+ ajuda tutores e clínicas a acabar com a comunicação caótica. Uma app para chat, marcações, sintomas, medicação e documentos — feita para veterinária.',
   },
   header: {
-    logoAria: 'Início VetPlus',
+    logoAria: 'Início Vet+',
     navAria: 'Principal',
     nav: {
       features: 'Funcionalidades',
       howItWorks: 'Como funciona',
-      pricing: 'Preços',
+      benefits: 'Benefícios',
+      forYou: 'Para quem',
       faq: 'FAQ',
     },
-    viewPlans: 'Ver planos',
-    startTrial: 'Teste gratuito',
+    learnMore: 'Ver funcionalidades',
+    cta: 'Acesso antecipado',
     openMenu: 'Abrir menu',
     closeMenu: 'Fechar menu',
     langEn: 'EN',
@@ -25,234 +26,203 @@ export const ptPT: Messages = {
     switchLang: 'Idioma',
   },
   hero: {
-    badge: 'Liga ao software que já usa',
-    title: 'Fale com clientes —',
-    titleEm: 'sem telefonemas',
-    subtitle:
-      'O VetPlus integra o software da clínica. Mensagens, lembretes e atualizações numa caixa de entrada — sem mudar a rotina da equipa.',
-    ctaPrimary: 'Teste grátis 14 dias',
-    ctaSecondary: 'Ver integração',
-    trust: 'Sem cartão · Mantém o PIMS · Cancele quando quiser',
-    stats: [
-      { value: '2 400+', label: 'Clínicas com VetPlus' },
-      { value: '60%', label: 'Menos chamadas' },
-      { value: '15 min', label: 'Setup rápido' },
-    ],
+    badge: 'Para tutores e clínicas veterinárias',
+    title: 'Os cuidados do seu animal merecem',
+    titleEm: 'um só lugar',
+    lead: 'Chega de chamadas, mensagens e papelada dispersa.',
+    supporting:
+      'O Vet+ reúne chat com o veterinário, marcações, sintomas, medicação e documentos — tudo no mesmo sítio, para tutores e clínicas.',
+    ctaPrimary: 'Acesso antecipado',
+    ctaSecondary: 'Ver funcionalidades',
     mock: {
-      inboxTitle: 'Mensagens',
-      statusNew: 'Nova',
-      messages: [
-        { name: 'Sara M.', text: 'Reagendar consulta da Luna?' },
-        { name: 'João T.', text: 'Obrigado pelos resultados!' },
-        { name: 'Maria K.', text: 'Lembrete · Vacina Max amanhã' },
-        { name: 'David L.', text: 'Instruções pós-consulta enviadas' },
+      appTitle: 'Vet+',
+      rows: [
+        { label: 'Chat com o veterinário', detail: 'Fale com a equipa, sem ficar em espera' },
+        { label: 'Marcar consulta', detail: 'Marcações sem idas e voltas' },
+        { label: 'Lembrete de medicação', detail: 'Tratamento na hora certa em casa' },
+        { label: 'Documentos', detail: 'Resultados e notas, quando precisar' },
       ],
-      syncTitle: 'Sincronizado com PIMS',
-      syncDesc: 'Marcações e clientes atualizados',
+      floatTitle: 'Registo de sintomas',
+      floatDesc: 'Registe o que muda — mantenha o veterinário informado',
     },
   },
   features: {
     label: 'Funcionalidades',
-    title: 'Comunicação melhor — sobre o que já tem',
+    title: 'O que hoje está disperso — amanhã unificado',
     subtitle:
-      'Não é um PIMS novo. Uma camada de comunicação ligada ao seu software, para toda a equipa.',
-    integrationsAria: 'Integrações',
-    integrationsLabel: 'Compatível com',
-    integrationsMore: '+ outros',
+      'O Vet+ é a plataforma que reúne comunicação, agenda, saúde e registos numa experiência — com chat directo entre tutores e veterinários.',
     items: [
       {
-        title: 'Integração PIMS',
+        title: 'Contacto e chat com o veterinário',
         description:
-          'Liga ao software da clínica. Sincroniza clientes, animais e marcações — sem duplicar dados.',
+          'Mensagens à clínica sem telefonemas. Conversas claras, ligadas aos cuidados do animal.',
       },
       {
-        title: 'Mensagens bidirecionais',
+        title: 'Marcação de consultas',
         description:
-          'SMS, e-mail ou chat numa caixa partilhada — cada conversa no registo certo.',
+          'Marque e gira visitas em poucos toques. Menos administração para a clínica, menos stress para o tutor.',
       },
       {
-        title: 'Lembretes automáticos',
+        title: 'Registo de sintomas',
         description:
-          'Confirmações, vacinas e seguimentos enviados da agenda que já usa.',
+          'Registe sintomas à medida que aparecem. Dê ao veterinário o quadro completo — não só o que se lembra na consulta.',
       },
       {
-        title: 'Documentos e updates',
+        title: 'Alertas de medicação',
         description:
-          'Análises, cuidados e faturas em segurança — o cliente é notificado na hora.',
+          'Lembretes atempados para o tratamento cumprir. Tranquilidade para o tutor, melhores resultados para o animal.',
       },
       {
-        title: 'Caixa da equipa',
+        title: 'Partilha de documentos',
         description:
-          'Receção, técnicos e vets no mesmo histórico. Atribua e transfira conversas.',
+          'Resultados e instruções entregues em segurança — sem procurar em e-mails ou chamadas perdidas.',
       },
       {
-        title: 'Seguro',
+        title: 'Uma plataforma coordenada',
         description:
-          'Encriptação, permissões por função e auditoria — comunicação em conformidade.',
+          'Tudo ligado, pensado para veterinária — não adaptado de outro sector.',
       },
     ],
   },
   howItWorks: {
     label: 'Como funciona',
-    title: 'Ativo numa tarde — mesmo software',
-    subtitle: 'Sem mudar de PIMS. O VetPlus assenta no que já utiliza.',
+    title: 'Do caos à clareza em três passos',
+    subtitle:
+      'O Vet+ transforma idas e voltas desorganizadas num percurso de cuidados em que ambos confiam.',
     steps: [
       {
-        title: 'Ligar o PIMS',
+        title: 'Abra o Vet+',
         description:
-          'Associe em minutos. Sincronizamos clientes, animais e marcações — sem migração.',
+          'Tutores e clínicas na mesma plataforma — feita para ligar os dois lados desde o início.',
       },
       {
-        title: 'Configurar a equipa',
+        title: 'Centralize os cuidados',
         description:
-          'Convide receção e clínicos. Modelos, lembretes e notificações à medida.',
+          'Mensagens, marcações, sintomas, medicação e documentos finalmente no mesmo sítio.',
       },
       {
-        title: 'Contactar clientes',
+        title: 'Cuide com confiança',
         description:
-          'Mensagens no dia 1. Lembretes automáticos, respostas numa caixa, menos chamadas.',
+          'Menos mal-entendidos, seguimento mais rápido e uma relação mais forte com a clínica.',
       },
     ],
   },
-  testimonials: {
-    label: 'Testemunhos',
-    title: 'Melhor comunicação — sem mudar de sistema',
-    items: [
+  benefits: {
+    label: 'Benefícios',
+    title: 'Porque tutores e clínicas escolhem o Vet+',
+    subtitle:
+      'Menos fricção. Mais confiança. Cuidados como deviam ser — organizados, humanos e sempre por perto.',
+    practicalTitle: 'O que ganha',
+    emotionalTitle: 'O que sente',
+    practical: [
       {
-        quote:
-          'Queríamos menos chamadas, não novo PIMS. O VetPlus integrou-se — a receção respira.',
-        name: 'Dra. Sara Chen',
-        role: 'Diretora, Paws & Claws',
-        initials: 'SC',
+        title: 'Comunicação que funciona',
+        description: 'Fale com o veterinário quando importa — sem rodeios.',
       },
       {
-        quote:
-          'Setup numa tarde. Lembretes automáticos e respostas visíveis para toda a equipa.',
-        name: 'Marcus Rivera',
-        role: 'Gestor, Hospital Veterinário do Vale',
-        initials: 'MR',
+        title: 'Tudo num só lugar',
+        description: 'Marcações, sintomas, medicação e documentos — finalmente reunidos.',
       },
       {
-        quote:
-          'Resultados por link seguro. O cliente notifica-se e responde por mensagem.',
-        name: 'Dra. Emily Okonkwo',
-        role: 'Vet. responsável, Greenfield',
-        initials: 'EO',
+        title: 'Atualizações a tempo',
+        description: 'A informação certa, na altura certa — sem correr atrás da clínica.',
+      },
+    ],
+    emotional: [
+      {
+        title: 'Menos stress',
+        description: 'Deixe de duvidar se se esqueceu de algo importante.',
+      },
+      {
+        title: 'Confiança real',
+        description: 'Saiba que está a cuidar bem do animal — com apoio que aparece.',
+      },
+      {
+        title: 'Mais perto da clínica',
+        description: 'Ligação à equipa que cuida do seu animal, para além da consulta.',
       },
     ],
   },
-  pricing: {
-    label: 'Preços',
-    title: 'Planos simples para comunicar melhor',
-    subtitle: '14 dias grátis e setup PIMS incluído. −20% em faturação anual.',
-    currency: '€',
-    perMonth: '/mês',
-    custom: 'À medida',
-    badgePopular: 'Popular',
-    plans: [
+  audiences: {
+    label: 'Para quem',
+    title: 'Para si — cuide em casa ou na clínica',
+    subtitle:
+      'O Vet+ serve os dois lados da relação com ferramentas à medida da veterinária.',
+    cards: [
       {
-        id: 'starter',
-        name: 'Starter',
-        price: '79',
-        description: 'Clínicas pequenas a modernizar comunicação.',
+        id: 'owners',
+        name: 'Tutores',
+        description:
+          'Quer conveniência, clareza e um veterinário fácil de contactar. O Vet+ põe os cuidados do animal organizados — sem complicar.',
         features: [
-          'Integração PIMS',
-          'SMS e e-mail',
-          'Lembretes de marcação',
-          'Até 3 utilizadores',
-          'Apoio por e-mail',
+          'Chat com o veterinário',
+          'Marcações simples',
+          'Registo de sintomas',
+          'Lembretes de medicação',
+          'Documentos sempre acessíveis',
         ],
-        cta: 'Teste gratuito',
+        cta: 'Acesso antecipado',
       },
       {
-        id: 'professional',
-        name: 'Professional',
-        price: '149',
-        description: 'Clínicas com volume e automatização.',
+        id: 'clinics',
+        name: 'Clínicas veterinárias',
+        description:
+          'Quer clientes mais satisfeitos e uma equipa que não afoga em chamadas. O Vet+ comunica com clareza — menos repetição, mais cuidado.',
         features: [
-          'Tudo do Starter',
-          'Equipa ilimitada',
-          'Modelos e campanhas',
-          'Documentos e análises',
-          'Histórico de conversas',
-          'Apoio prioritário',
+          'Contacto com clientes fluido',
+          'Marcações mais simples',
+          'Contexto partilhado por animal',
+          'Entrega segura de documentos',
+          'Tutores mais envolvidos',
         ],
-        cta: 'Teste gratuito',
-        highlighted: true,
-        badge: 'Popular',
-      },
-      {
-        id: 'enterprise',
-        name: 'Enterprise',
-        price: 'custom',
-        description: 'Grupos multi-sede e integrações à medida.',
-        features: [
-          'Painel multi-sede',
-          'Conectores PIMS à medida',
-          'Onboarding dedicado',
-          'SLA e gestor',
-          'Permissões avançadas',
-        ],
-        cta: 'Contactar',
+        cta: 'Acesso antecipado',
       },
     ],
   },
   faq: {
     label: 'FAQ',
     title: 'Dúvidas? Respondemos.',
-    subtitleBefore: 'Mais questões?',
+    subtitleBefore: 'Ainda curioso?',
     subtitleLink: 'Fale connosco',
-    subtitleAfter: '— resposta em horas.',
+    subtitleAfter: '— gostamos de ouvir.',
     items: [
       {
-        q: 'Substituo o software da clínica?',
-        a: 'Não. Integra o PIMS atual — a equipa mantém as ferramentas habituais; o VetPlus acrescenta comunicação.',
+        q: 'O que é o Vet+?',
+        a: 'O Vet+ é uma app coordenada para tutores e clínicas veterinárias. Reúne comunicação, marcações, sintomas, alertas de medicação e documentos numa plataforma feita para veterinária — disponível em computador e telemóvel.',
       },
       {
-        q: 'Que PIMS suportam?',
-        a: 'ezyVet, Cornerstone, AVImark, Provet, HVMS e outros. Não está na lista? Contacte-nos.',
+        q: 'Para quem é o Vet+?',
+        a: 'Para tutores cansados de seguimento confuso e para clínicas que querem comunicação coordenada sem o telefone a tocar sem parar.',
       },
       {
-        q: 'Quanto demora o setup?',
-        a: 'Muitas clínicas ligam e enviam a 1.ª mensagem no mesmo dia — em geral menos de 1 hora.',
+        q: 'Em que se diferencia?',
+        a: 'A maioria das ferramentas resolve uma peça. O Vet+ unifica o percurso de cuidados — com chat entre tutores e veterinários, num produto só para veterinária.',
       },
       {
-        q: 'Como recebem as mensagens?',
-        a: 'SMS, e-mail ou app. As respostas chegam à caixa VetPlus, ligadas ao cliente e animal no PIMS.',
-      },
-      {
-        q: 'É seguro?',
-        a: 'Sim. Encriptação, permissões por função e registos de auditoria para conformidade.',
+        q: 'Como posso ter acesso?',
+        a: 'O Vet+ está quase a chegar. Deixe o e-mail abaixo e avisamos em primeiro lugar.',
       },
     ],
   },
   cta: {
-    title: 'Pronto para falar com clientes?',
-    subtitle: 'Clínicas que comunicam com tutores — sem mudar de software.',
-    emailLabel: 'E-mail profissional',
-    emailPlaceholder: 'si@suaclinica.pt',
-    submit: 'Começar grátis',
-    note: '14 dias grátis · Setup PIMS · Compatível com o seu sistema',
-    alert: 'Obrigado! Contactamos {{email}} em breve.',
+    title: 'Pronto para cuidados que finalmente encaixam?',
+    subtitle:
+      'Junte-se à lista de acesso antecipado — tutor ou clínica, mantemos-no informado.',
+    emailLabel: 'Endereço de e-mail',
+    emailPlaceholder: 'si@exemplo.pt',
+    submit: 'Pedir acesso antecipado',
+    note: 'Sem spam — só novidades sobre o Vet+.',
+    alert: 'Está na lista! Em breve enviamos novidades para {{email}}.',
   },
   footer: {
     tagline:
-      'Comunicação com clientes integrada no software da clínica — sem substituir o seu fluxo.',
+      'Vet+ — uma plataforma para comunicação veterinária, marcações, saúde e documentos.',
     navAria: 'Rodapé',
     copyright: 'Todos os direitos reservados.',
     groups: [
-      {
-        title: 'Produto',
-        items: ['Funcionalidades', 'Integrações', 'Preços', 'Novidades'],
-      },
-      {
-        title: 'Empresa',
-        items: ['Sobre', 'Carreiras', 'Blogue', 'Contacto'],
-      },
-      {
-        title: 'Legal',
-        items: ['Privacidade', 'Termos', 'Segurança'],
-      },
+      { title: 'Produto', items: ['Funcionalidades', 'Benefícios', 'Para quem', 'FAQ'] },
+      { title: 'Empresa', items: ['Sobre', 'Contacto'] },
+      { title: 'Legal', items: ['Privacidade', 'Termos'] },
     ],
   },
 }
