@@ -28,9 +28,9 @@ export const en: Messages = {
     badge: 'For pet owners & veterinary clinics',
     title: 'Your pet\'s care deserves',
     titleEm: 'one clear place',
-    lead: 'Enough with scattered calls, messages, and paperwork.',
+    lead: 'Your team should not spend 4-6 hours a day handling scheduling calls.',
     supporting:
-      'Vet+ brings vet chat, bookings, symptom tracking, medication alerts, and documents together — one place for owners and clinics.',
+      'Vet+ reduces phone pressure by moving bookings and updates into one flow, while integrating with your clinic\'s current management software so your team keeps working in familiar systems.',
     ctaPrimary: 'Get early access',
     ctaSecondary: 'See what\'s included',
     mock: {
@@ -49,7 +49,7 @@ export const en: Messages = {
     label: 'Features',
     title: 'Everything scattered today — unified tomorrow',
     subtitle:
-      'Vet+ is the only platform that pulls communication, scheduling, health tracking, and records into one experience — plus direct chat between pet owners and vets.',
+      'Built around the biggest operational bottleneck in clinics — the phone. Vet+ cuts call load and connects directly with your current clinic management software.',
     items: [
       {
         title: 'Contact & chat with your vet',
@@ -57,9 +57,9 @@ export const en: Messages = {
           'Message your clinic directly. No more phone tag — just clear conversations tied to your pet\'s care.',
       },
       {
-        title: 'Appointment booking',
+        title: 'Appointment booking without phone bottlenecks',
         description:
-          'Book and manage visits in a few taps. Less admin for clinics, less hassle for owners.',
+          'Owners can book quickly while the clinic avoids endless back-and-forth calls during peak hours.',
       },
       {
         title: 'Symptom tracking',
@@ -77,9 +77,9 @@ export const en: Messages = {
           'Lab results, instructions, and updates delivered securely — no digging through email or voicemail.',
       },
       {
-        title: 'One coordinated platform',
+        title: 'Integrates with your clinic software',
         description:
-          'Every feature works together, purpose-built for veterinary care — not bolted onto something else.',
+          'Works on top of your current management software, so communication improves without replacing your existing operational setup.',
       },
     ],
   },
@@ -90,9 +90,9 @@ export const en: Messages = {
       'Vet+ turns disorganised back-and-forth into a care journey both sides can trust.',
     steps: [
       {
-        title: 'Open Vet+',
+        title: 'Connect with your current clinic software',
         description:
-          'Pet owners and clinics join the same platform — designed to connect both sides from day one.',
+          'Vet+ integrates with existing management workflows, so teams can launch faster with less disruption.',
       },
       {
         title: 'Centralise your care',
@@ -115,12 +115,12 @@ export const en: Messages = {
     emotionalTitle: 'What you feel',
     practical: [
       {
-        title: 'Communication that works',
-        description: 'Reach your vet when it matters — without the runaround.',
+        title: 'Less time on calls',
+        description: 'Reduce front-desk phone overload and recover time for in-clinic care.',
       },
       {
-        title: 'Everything in one place',
-        description: 'Appointments, symptoms, meds, and documents — finally under one roof.',
+        title: 'Integration without replacing your stack',
+        description: 'Keep your clinic\'s current management software and add a better client communication layer on top.',
       },
       {
         title: 'Updates when you need them',
@@ -166,11 +166,11 @@ export const en: Messages = {
         id: 'clinics',
         name: 'Veterinary clinics',
         description:
-          'You want happier clients and a team that isn\'t drowning in calls. Vet+ helps you communicate clearly — with less repetition and more care.',
+          'You want happier clients and a team that is not drowning in calls. Vet+ cuts call pressure while integrating with the management software your clinic already uses.',
         features: [
           'Streamlined client contact',
-          'Smarter appointment flow',
-          'Shared context on every pet',
+          'Smarter appointment flow with fewer calls',
+          'Shared context on every pet record',
           'Secure document delivery',
           'Owners who stay engaged',
         ],
@@ -187,7 +187,7 @@ export const en: Messages = {
     items: [
       {
         q: 'What is Vet+?',
-        a: 'Vet+ is a coordinated app for pet owners and veterinary clinics. It brings communication, appointment booking, symptom tracking, medication alerts, and document sharing into one platform built for veterinary care — available on computer and mobile.',
+        a: 'Vet+ is a coordinated app for pet owners and veterinary clinics. It centralises communication, appointment booking, symptom tracking, medication alerts, and document sharing — and integrates with current clinic management software.',
       },
       {
         q: 'Who is Vet+ for?',
@@ -195,7 +195,7 @@ export const en: Messages = {
       },
       {
         q: 'How is Vet+ different?',
-        a: 'Most tools solve one piece. Vet+ unifies the full care journey — with direct chat between owners and vets, in a product made only for veterinary use.',
+        a: 'Most tools solve one piece. Vet+ targets the biggest time drain — phone-heavy front-desk workflows — while unifying the care journey in one veterinary-specific platform that integrates with existing clinic systems.',
       },
       {
         q: 'How can I get access?',

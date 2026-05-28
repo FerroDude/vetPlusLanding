@@ -29,9 +29,9 @@ export const ptPT: Messages = {
     badge: 'Para tutores e clínicas veterinárias',
     title: 'Os cuidados do seu animal merecem',
     titleEm: 'um só lugar',
-    lead: 'Chega de chamadas, mensagens e papelada dispersa.',
+    lead: 'A sua equipa não deve gastar 4-6 horas por dia em chamadas de marcação.',
     supporting:
-      'O Vet+ reúne chat com o veterinário, marcações, sintomas, medicação e documentos — tudo no mesmo sítio, para tutores e clínicas.',
+      'O Vet+ reduz a pressão do telefone ao passar marcações e atualizações para um único fluxo, integrando-se com o software de gestão que a clínica já utiliza.',
     ctaPrimary: 'Acesso antecipado',
     ctaSecondary: 'Ver funcionalidades',
     mock: {
@@ -50,7 +50,7 @@ export const ptPT: Messages = {
     label: 'Funcionalidades',
     title: 'O que hoje está disperso — amanhã unificado',
     subtitle:
-      'O Vet+ é a plataforma que reúne comunicação, agenda, saúde e registos numa experiência — com chat directo entre tutores e veterinários.',
+      'Criado para o maior bloqueio operacional das clínicas — o telefone. O Vet+ reduz chamadas e liga-se ao software de gestão atual da clínica.',
     items: [
       {
         title: 'Contacto e chat com o veterinário',
@@ -58,9 +58,9 @@ export const ptPT: Messages = {
           'Mensagens à clínica sem telefonemas. Conversas claras, ligadas aos cuidados do animal.',
       },
       {
-        title: 'Marcação de consultas',
+        title: 'Marcações sem bloqueios no telefone',
         description:
-          'Marque e gira visitas em poucos toques. Menos administração para a clínica, menos stress para o tutor.',
+          'O tutor marca rapidamente e a clínica evita idas e voltas por chamada nas horas de maior pressão.',
       },
       {
         title: 'Registo de sintomas',
@@ -78,9 +78,9 @@ export const ptPT: Messages = {
           'Resultados e instruções entregues em segurança — sem procurar em e-mails ou chamadas perdidas.',
       },
       {
-        title: 'Uma plataforma coordenada',
+        title: 'Integração com o software da clínica',
         description:
-          'Tudo ligado, pensado para veterinária — não adaptado de outro sector.',
+          'Funciona sobre o software de gestão já existente, melhorando a comunicação sem substituir a operação atual.',
       },
     ],
   },
@@ -91,9 +91,9 @@ export const ptPT: Messages = {
       'O Vet+ transforma idas e voltas desorganizadas num percurso de cuidados em que ambos confiam.',
     steps: [
       {
-        title: 'Abra o Vet+',
+        title: 'Ligue ao software que a clínica já usa',
         description:
-          'Tutores e clínicas na mesma plataforma — feita para ligar os dois lados desde o início.',
+          'O Vet+ integra-se nos fluxos de gestão já existentes, permitindo adotar mais depressa e com menos fricção.',
       },
       {
         title: 'Centralize os cuidados',
@@ -116,12 +116,12 @@ export const ptPT: Messages = {
     emotionalTitle: 'O que sente',
     practical: [
       {
-        title: 'Comunicação que funciona',
-        description: 'Fale com o veterinário quando importa — sem rodeios.',
+        title: 'Menos tempo em chamadas',
+        description: 'Reduza a sobrecarga telefónica da receção e recupere tempo para o atendimento clínico.',
       },
       {
-        title: 'Tudo num só lugar',
-        description: 'Marcações, sintomas, medicação e documentos — finalmente reunidos.',
+        title: 'Integração sem trocar de sistema',
+        description: 'Mantenha o software de gestão atual e acrescente uma camada de comunicação muito mais eficaz.',
       },
       {
         title: 'Atualizações a tempo',
@@ -167,11 +167,11 @@ export const ptPT: Messages = {
         id: 'clinics',
         name: 'Clínicas veterinárias',
         description:
-          'Quer clientes mais satisfeitos e uma equipa que não afoga em chamadas. O Vet+ comunica com clareza — menos repetição, mais cuidado.',
+          'Quer clientes mais satisfeitos e uma equipa que não afoga em chamadas. O Vet+ reduz pressão telefónica e integra-se com o software de gestão já usado na clínica.',
         features: [
           'Contacto com clientes fluido',
-          'Marcações mais simples',
-          'Contexto partilhado por animal',
+          'Marcações mais simples e com menos chamadas',
+          'Contexto partilhado no registo do animal',
           'Entrega segura de documentos',
           'Tutores mais envolvidos',
         ],
@@ -188,7 +188,7 @@ export const ptPT: Messages = {
     items: [
       {
         q: 'O que é o Vet+?',
-        a: 'O Vet+ é uma app coordenada para tutores e clínicas veterinárias. Reúne comunicação, marcações, sintomas, alertas de medicação e documentos numa plataforma feita para veterinária — disponível em computador e telemóvel.',
+        a: 'O Vet+ é uma app coordenada para tutores e clínicas veterinárias. Centraliza comunicação, marcações, sintomas, alertas de medicação e documentos, e integra-se com o software de gestão que a clínica já utiliza.',
       },
       {
         q: 'Para quem é o Vet+?',
@@ -196,7 +196,7 @@ export const ptPT: Messages = {
       },
       {
         q: 'Em que se diferencia?',
-        a: 'A maioria das ferramentas resolve uma peça. O Vet+ unifica o percurso de cuidados — com chat entre tutores e veterinários, num produto só para veterinária.',
+        a: 'A maioria das ferramentas resolve só uma parte. O Vet+ ataca a maior perda de tempo — fluxos administrativos dependentes de chamadas — enquanto unifica o percurso de cuidados numa plataforma veterinária que integra com os sistemas existentes.',
       },
       {
         q: 'Como posso ter acesso?',
