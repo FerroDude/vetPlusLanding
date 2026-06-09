@@ -1,27 +1,13 @@
-import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Benefits } from './components/Benefits'
-import { Features } from './components/Features'
-import { Audiences } from './components/Audiences'
-import { HowItWorks } from './components/HowItWorks'
-import { Faq } from './components/Faq'
-import { CtaBanner } from './components/CtaBanner'
-import { Footer } from './components/Footer'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { EditPage } from './pages/EditPage'
+import { LandingPage } from './pages/LandingPage'
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Benefits />
-        <Features />
-        <Audiences />
-        <HowItWorks />
-        <Faq />
-        <CtaBanner />
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/edit" element={<EditPage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   )
 }

@@ -1,3 +1,31 @@
+.landing--embedded {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.landing--embedded .hero {
+  padding-top: 2.5rem;
+}
+
+.landing--embedded .hero__grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'copy'
+    'visual';
+  gap: 2rem;
+}
+
+.landing--embedded .hero__visual {
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.landing--embedded .hero__card--float {
+  left: 0;
+  max-width: calc(100% - 2rem);
+}
+
 .hero {
   position: relative;
   padding-top: calc(var(--header-height) + 2.5rem);
@@ -224,6 +252,10 @@
 }
 
 @media (max-width: 900px) {
+  .landing--embedded .hero {
+    padding-top: 1.5rem;
+  }
+
   .hero {
     padding-top: calc(var(--header-height) + 1.5rem);
     padding-bottom: 3rem;

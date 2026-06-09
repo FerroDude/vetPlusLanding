@@ -27,9 +27,21 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Customize
 
-- **Copy & pricing** — Edit `src/i18n/locales/en.ts` and `src/i18n/locales/pt-PT.ts`
+- **Copy (in code)** — Edit `src/i18n/locales/en.ts` and `src/i18n/locales/pt-PT.ts`
+- **Copy (live editor)** — See [Live content editor](#live-content-editor) below
 - **Colors & fonts** — Update CSS variables in `src/index.css`
 - **CTA form** — Replace the alert in `CtaBanner.tsx` with your API or email service (e.g. Formspree, Resend)
+
+## Live content editor
+
+Non-developers can edit all site text at **`/edit`** (e.g. `https://ferrodude.github.io/vetPlusLanding/edit`).
+
+1. Open `/edit` and enter the password (default: `vetplus-edit-2026` — change it in `src/config/edit.ts` before sharing).
+2. Edit text in **PT** or **EN** — the site preview updates **in real time** as you type. Click **Guardar** to persist changes in that browser.
+3. Click **Exportar JSON** and send the file to whoever manages the repo.
+4. Place the file at `public/content-overrides.json` and push — everyone will see the updates after deploy.
+
+> **Note:** The password only hides the editor from casual visitors; it is not strong security (everything runs in the browser). For publishing to all visitors, the exported JSON must be committed and deployed — the live site cannot write to the server on its own.
 
 ## Deploy (GitHub Pages)
 

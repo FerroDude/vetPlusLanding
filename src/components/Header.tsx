@@ -44,23 +44,29 @@ function LangSwitcher({
   )
 }
 
-export function Header() {
+type HeaderProps = {
+  embedded?: boolean
+}
+
+export function Header({ embedded = false }: HeaderProps) {
   const { locale, setLocale, messages: t } = useI18n()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
+    if (embedded) return
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [embedded])
 
   useEffect(() => {
+    if (embedded) return
     document.body.style.overflow = menuOpen ? 'hidden' : ''
     return () => {
       document.body.style.overflow = ''
     }
-  }, [menuOpen])
+  }, [menuOpen, embedded])
 
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 1181px)')
@@ -83,7 +89,9 @@ export function Header() {
   }
 
   return (
-    <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
+    <header
+      className={`header ${scrolled ? 'header--scrolled' : ''} ${embedded ? 'header--embedded' : ''}`}
+    >
       <div className="container header__inner">
         <a href="#" className="header__logo" aria-label={t.header.logoAria}>
           <span className="header__logo-icon" aria-hidden="true">
