@@ -36,7 +36,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 Non-developers can edit all site text at **`/edit`** (e.g. `https://ferrodude.github.io/vetPlusLanding/edit`).
 
-1. Open `/edit` and enter the password (default: `vetplus-edit-2026` — change it in `src/config/edit.ts` before sharing).
+1. Open `/edit` and enter the password (change it in `src/config/edit.ts` before sharing).
 2. Edit text in **PT** or **EN** — the site preview updates **in real time** as you type. Click **Guardar** to persist changes in that browser.
 3. Click **Exportar JSON** and send the file to whoever manages the repo.
 4. Place the file at `public/content-overrides.json` and push — everyone will see the updates after deploy.
